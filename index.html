@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <form>
+        <textarea id="inputData"></textarea><br>
+        <select id="algorithm">
+            <option value="md5">MD5</option>
+            <option value="sha256">SHA-256</option>
+            <option value="keccak512">Keccak-512</option>
+            <option value="ripemd160">RipeMD160</option>
+            <option value="aes">AES</option>
+        </select><br>
+        <input type="text" id="keyInput" placeholder="Enter key (optional)"><br>
+        <button id="generateKey">Generate Key</button><br><br>
+        <button id="encryptButton">Encrypt</button>
+        <textarea id="encryptedData"></textarea><br><br>
+        <button id="decryptButton">Decrypt</button>
+        <textarea id="decryptedData"></textarea>
+    </form>
+</body>
+
+</html>
